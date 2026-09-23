@@ -7,7 +7,7 @@
     <title>Locations | Gold Gym</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="page-grid">
     <!-- HEADER / NAVIGATION -->
     <header>
         <nav class="wrap nav">
@@ -23,6 +23,20 @@
         </nav>
     </header>
 
+    <!-- GRID SIDEBAR -->
+    <aside class="sidebar">
+        <small>QUICK GUIDE</small>
+        <h3>Gold Gym network</h3>
+        <p>Use the locations below to compare training spaces across the project.</p>
+        <ul>
+            <li><a href="#astana">Astana</a></li>
+            <li><a href="#almaty">Almaty</a></li>
+            <li><a href="#shymkent">Shymkent</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+        </ul>
+    </aside>
+
+    <!-- GRID MAIN AREA -->
     <main>
         <!-- HERO SECTION -->
         <section class="hero compact">
@@ -34,29 +48,86 @@
             </div>
         </section>
 
-        <!-- LOCATION CARDS -->
+        <!-- FLEXBOX LOCATION CARDS -->
         <section class="wrap">
             <div class="cards">
-                <article>
+                <article id="astana">
                     <img src="images/astana.svg" alt="Astana gym illustration">
                     <h3>Astana</h3>
                     <p>Left Bank · 08 Saryarka Avenue</p>
                     <p>06:00–00:00 daily</p>
+                    <a class="btn card-btn" href="contact.html">Ask about Astana</a>
                 </article>
 
-                <article>
+                <article id="almaty">
                     <img src="images/almaty.svg" alt="Almaty gym illustration">
                     <h3>Almaty</h3>
                     <p>Dostyk area · 15 Abai Avenue</p>
                     <p>06:00–00:00 daily</p>
+                    <a class="btn card-btn" href="contact.html">Ask about Almaty</a>
                 </article>
 
-                <article>
+                <article id="shymkent">
                     <img src="images/community.svg" alt="Shymkent gym illustration">
                     <h3>Shymkent</h3>
                     <p>City Center · 21 Tauke Khan Avenue</p>
                     <p>06:00–00:00 daily</p>
+                    <a class="btn card-btn" href="contact.html">Ask about Shymkent</a>
                 </article>
+            </div>
+        </section>
+
+        <!-- CSS GRID IMAGE GALLERY -->
+        <section class="wrap" id="gallery">
+            <small>IMAGE GALLERY</small>
+            <h2>Inside Gold Gym</h2>
+            <p>Project visuals arranged with CSS Grid. Hover an image to reveal its caption.</p>
+
+            <div class="gallery">
+                <figure class="gallery-item">
+                    <img src="images/gym-floor.svg" alt="Gold Gym training floor">
+                    <figcaption>Training floor</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/strength.svg" alt="Strength equipment">
+                    <figcaption>Strength zone</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/community.svg" alt="Gym community">
+                    <figcaption>Community area</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/team.svg" alt="Gold Gym team">
+                    <figcaption>Coaching team</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/astana.svg" alt="Astana location">
+                    <figcaption>Astana</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/almaty.svg" alt="Almaty location">
+                    <figcaption>Almaty</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/yelnur.jpg" alt="Yelnur profile">
+                    <figcaption>Team member: Yelnur</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/akejan.jpg" alt="Akejan profile">
+                    <figcaption>Team member: Akejan</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/alikhan.jpg" alt="Alikhan profile">
+                    <figcaption>Team member: Alikhan</figcaption>
+                </figure>
             </div>
         </section>
     </main>
